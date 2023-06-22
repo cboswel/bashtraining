@@ -42,7 +42,7 @@ git = your friend
 	- git add --all
 	- git commit -m "some message"
 	- git push (to send it online, optional)
-	- git clone https://github.com/cboswel/bashtraining.git
+	- git clone git@github.com:cboswel/bashtraining.git
 	- ssh vs https. ssh is faster in the long run but you need to make youself a key.
 	- It stops you having to enter username + password, because the key is like your password.
 
