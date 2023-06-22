@@ -1,0 +1,53 @@
+Useful BASH commands:
+cd = Change Directory.
+	- Just enter cd to go back to your home directory
+	- use "cd -" to go back to your previous directory
+	- enter a path after, either absolute (/path/to/somewhere) or relative (fromhere/to/there)
+
+tab completion is really useful
+	- Keep mashing tab to autocomplete as long as there is one possible next character
+	- Mash twice and it will show all possible options
+
+ls = print the contents of the current folder
+	- add a path after to print the contents of a different folder
+	- you can modify programs with flags such as ls -a or ls -l. You can combime them: ls -la
+	- ll is an example of an alias. You can see it in your bashrc file (vim ~/.bashrc)
+
+Talking of vim....
+	- Vim is scary at first but great in the long run. You could use nano instead, easier to learn but less powerful
+	- vim + a path to a file to open it. A path that doesn't exist will start writing a new file there.
+	- 2 modes, insert and edit. Press ESC to go to edit mode and i to enter insert mode.
+	- insert mode is how you type, edit is how you move around.
+	- A to append to the end of a line. dd to delete a line. o to make a new line. Many more...
+	- To save and quit, :wq or :q! to quit without saving.
+
+mkdir - Make Directory. Makes a new folder.
+	- Use the -P flag to make all the parent directories on the way too.
+
+rm = delete file, rm -rf = delete folder. You can't undo it.
+
+tmux - Termianl Multiplexer
+	- Useful as a better alt-tab
+	- But really really useful in saving remote sessions.
+	- crtl + b to give it a command.
+	- crtl-b, number = swap to window number <number>
+	- ctrl-b, c = create new window
+
+cowsay is cute. Wanna try all the flags? Read up on man cowsay. Or man anything, for that matter
+
+git = your friend
+	- No online repo needed. You can use to save versions locally.
+	- git checkout -b <name> to create a new branch
+	- git checkout <name> to switch branches
+	- git add --all
+	- git commit -m "some message"
+	- git push (to send it online, optional)
+	- git clone https://github.com/cboswel/bashtraining.git
+	- ssh vs https. ssh is faster in the long run but you need to make youself a key.
+	- It stops you having to enter username + password, because the key is like your password.
+
+What did Rashed do again?
+	- ON VPN git clone https://git.ccfe.ac.uk/nimbus/koheron_sdk.git
+	- cd $_ && git checkout 2020.1_v2
+	- fix the cross compiler
+	- make setup
